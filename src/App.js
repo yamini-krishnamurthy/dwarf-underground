@@ -9,6 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <NavLinks />
         <main className="expanded row">
           <div className="large-8 medium-12 columns article">
             <h2 className="article-title">Gold Madness - Fact or Fiction?</h2>
