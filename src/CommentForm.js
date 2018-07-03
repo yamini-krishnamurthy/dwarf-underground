@@ -10,7 +10,7 @@ class CommentForm extends React.Component {
     }
   }
 
-  toggleCommentForm() {
+  toggleCommentForm = () => {
     this.setState({
       clicked: !this.state.clicked,
     })
@@ -23,7 +23,6 @@ class CommentForm extends React.Component {
       comments: comments,
       value: '',
     })
-    console.log('Local comments: ' + comments + 'State\'s comments: ' + this.state.comments) 
     event.preventDefault()
   }
 
@@ -37,7 +36,7 @@ class CommentForm extends React.Component {
     if(this.state.clicked) {
       return (
         <span>
-          <a className="article-link" onClick={() => this.toggleCommentForm()}>
+          <a className="article-link" onClick={this.toggleCommentForm}>
             <i className="fa fa-comments-o"></i>
             <span className="article-link-text">Comments</span>
           </a>
