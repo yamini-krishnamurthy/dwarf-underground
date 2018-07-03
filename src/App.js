@@ -7,6 +7,7 @@ import Author from './Author'
 import Article from './Article'
 import Footer from './Footer'
 import Advertisement from './Advertisement'
+import ArticleLink from './ArticleLink'
 
 class App extends Component {
   render() {
@@ -20,14 +21,8 @@ class App extends Component {
             <Author />
             <Article />
             <div className="article-links">
-              <a className="article-link" href="#">
-                <i className="fa fa-comments-o"></i>
-                <span className="article-link-text">Comments</span>
-              </a>
-              <a className="article-link" href="#">
-                <i className="fa fa-share"></i>
-                <span className="article-link-text">Share Post</span>
-              </a>
+              <ArticleLink iClass="fa fa-comments-o" text="Comments" />
+              <ArticleLink iClass="fa fa-share" text="Share Post" />
             </div>
           </div>
           <aside className="large-4 medium-12 columns">
@@ -68,6 +63,7 @@ class App extends Component {
       </div>
     );
   }
+
 }
 
 export default App;
