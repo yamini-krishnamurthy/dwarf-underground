@@ -25,9 +25,7 @@ class App extends Component {
               <ArticleLink iClass="fa fa-share" text="Share Post" />
             </div>
           </div>
-          <aside className="large-4 medium-12 columns">
-            <Advertisement />
-          </aside>
+          <Advertisement />
 
           <div className="small-12 columns other-articles">
             <h2>From around the Realm</h2>
