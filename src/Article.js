@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Author = () => {
+const Article = () => {
   return (
     <section className="article-body">
       <p><span className="article-start gold">E</span>psum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium.</p>
@@ -20,4 +20,4 @@ const Author = () => {
   )
 }
 
-export default Author
+export default Article
