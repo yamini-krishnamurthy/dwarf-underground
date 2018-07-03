@@ -1,11 +1,16 @@
 import React from 'react'
 
+import CommentForm from './CommentForm'
+
 const ArticleLink = (props) => {
   return (
-    <a className="article-link" href="#">
-      <i className={props.iClass}></i>
-      <span className="article-link-text">{props.text}</span>
-    </a>
+    <div className="article-links">
+      <CommentForm />
+      <a className="article-link" href="#">
+        <i className="fa fa-share"></i>
+        <span className="article-link-text">Share Post</span>
+      </a>
+    </div>
   )
 }
 
