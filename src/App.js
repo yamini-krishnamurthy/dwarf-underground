@@ -2,29 +2,17 @@ import React, { Component } from 'react';
 
 import './App.css';
 import Header from './Header'
-import NavLinks from './NavLinks'
-import Author from './Author'
-import Article from './Article'
 import Footer from './Footer'
 import Advertisement from './Advertisement'
-import ArticleLink from './ArticleLink'
+import Body from './Body'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header />
-        <NavLinks />
         <main className="expanded row">
-          <div className="large-8 medium-12 columns article">
-            <h2 className="article-title">Gold Madness - Fact or Fiction?</h2>
-            <Author />
-            <Article />
-            <div className="article-links">
-              <ArticleLink iClass="fa fa-comments-o" text="Comments" />
-              <ArticleLink iClass="fa fa-share" text="Share Post" />
-            </div>
-          </div>
+          <Body />
           <Advertisement />
 
           <div className="small-12 columns other-articles">
