@@ -55,9 +55,12 @@ class CommentForm extends React.Component {
           <input type="submit" value="Submit" />
         </form>
 
-        <ul>
-          {this.state.comments.map(comment => <li>{comment}</li>)}
-        </ul>
+        <div>
+          <p>Comments ({this.state.comments.length})</p>
+          <ul>
+            {this.state.comments.map(comment => <li><strong>Anonymous</strong>: {comment}</li>)}
+          </ul>
+        </div>
       </span>
       )
     }
